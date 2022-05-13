@@ -10,9 +10,7 @@ import android.widget.ImageView
 import androidx.appcompat.app.AppCompatActivity
 import androidx.core.content.ContextCompat
 import androidx.core.widget.doOnTextChanged
-import com.wafflecopter.multicontactpicker.ContactResult
-import com.wafflecopter.multicontactpicker.LimitColumn
-import com.wafflecopter.multicontactpicker.MultiContactPicker
+
 
 
 class PublicLinkActivity : AppCompatActivity() {
