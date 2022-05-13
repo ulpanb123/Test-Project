@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".EditChannelActivity"
+    android:orientation="vertical">
+
+    <include layout="@layout/toolbar_create"/>
+
+    <androidx.core.widget.NestedScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginTop="12dp"
+            android:layout_marginStart="16dp"
+            android:layout_marginEnd="16dp"
+            android:orientation="vertical">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/channel_name"
+                android:textSize="14sp"
+                android:textColor="@color/blue"
+                android:layout_marginBottom="8dp"
+                />
+
+            <com.google.android.material.textfield.TextInputEditText
+                android:id="@+id/channelNameEditText1"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/test_channel"
+                android:inputType="textCapSentences"
+                android:layout_gravity="center_vertical"
+                android:theme="@style/EditTextTheme"
+                />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/description"
+                android:textSize="14sp"
+                android:textColor="@color/blue"
+                android:layout_marginBottom="8dp"
+                android:layout_marginTop="42sp"/>
+
+            <com.google.android.material.textfield.TextInputEditText
+                android:id="@+id/channelDescrEditText1"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/default_descr"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/imageView"
+                android:theme="@style/EditTextTheme"
+                />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/username"
+                android:textSize="14sp"
+                android:textColor="@color/blue"
+                android:layout_marginTop="42sp"
+                android:layout_marginBottom="8dp"/>
+
+            <com.google.android.material.textfield.TextInputEditText
+                android:id="@+id/channelLinkEditText1"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/default_link"
+                android:theme="@style/EditTextTheme"/>
+
+        </LinearLayout>
+    </androidx.core.widget.NestedScrollView>
+
+
+
+
+</LinearLayout>
